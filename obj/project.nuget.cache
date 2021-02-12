@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DjBLK/O9hr6503OlPmtlT2/XVaTrc3gdNTau4eWNkBYIqwSMWG8s0B+l2QZbao9jFnlrWQ2smi65jEyJketSfA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Branden\\Documents\\GitHub\\UbraltMod\\UbraltMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Branden\\.nuget\\packages\\tmodloader.codeassist\\0.1.1\\tmodloader.codeassist.0.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
