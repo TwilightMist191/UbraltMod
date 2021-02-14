@@ -1,0 +1,6 @@
+﻿author = Atsuko Kamada
+version = 0.1.0
+displayName = Ubralt Mod
+hideCode = true
+hideResources = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
