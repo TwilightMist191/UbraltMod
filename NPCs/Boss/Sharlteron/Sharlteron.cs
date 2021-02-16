@@ -39,6 +39,12 @@ namespace UbraltMod.NPCs.Boss.Sharlteron
 			npc.noTileCollide = true;
 			npc.HitSound = SoundID.NPCHit1;
 			npc.DeathSound = SoundID.NPCDeath1;
+			music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/BonyBeatdown");
 		}
+
+        public override void AI()
+        {
+            base.AI();
+        }
     }
 }

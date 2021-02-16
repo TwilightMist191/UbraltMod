@@ -23,5 +23,39 @@ namespace UbraltMod
         {
 
         }
+        public override void PostSetupContent()
+        {
+            Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+            if(bossChecklist != null)
+            {
+                bossChecklist.Call(
+                    "AddToBossLoot",
+                    this,
+                    "Golem",
+                    ModContent.ItemType<Items.Summons.Boss.CursedSkull>());
+                
+                bossChecklist.Call(
+                    "AddBoss",
+                    11.5f,
+                    ModContent.NPCType<NPCs.Boss.Sharlteron.Sharlteron>(),
+                    this,
+                    "Sharlteron",
+                    UbraltWorld.downedSharlteron,
+                    ModContent.ItemType<Items.Summons.Boss.CursedSkull>(),
+                    ItemID.MusicBoxLunarBoss,
+                    ItemID.TerraBlade);
+
+                bossChecklist.Call(
+                    "AddBoss",
+                    4.5f,
+                    ModContent.NPCType<NPCs.Boss.Sharlteron.Sharlteron>(),
+                    this,
+                    "Dragon Fly",
+                    UbraltWorld.downedDragonFly,
+                    ModContent.ItemType<Items.Summons.Boss.CursedSkull>(),
+                    ItemID.MusicBoxLunarBoss,
+                    ItemID.TerraBlade);
+            }
+        }
     }
 }
